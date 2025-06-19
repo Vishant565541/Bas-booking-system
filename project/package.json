@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nayan",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^3.0.1",
+    "localstorage-polyfill": "^1.0.1",
+    "mongoose": "^8.10.1",
+    "node-localstorage": "^3.0.5",
+    "nodemailer": "^6.10.1",
+    "nodemon": "^3.1.9",
+    "uuid": "^11.1.0"
+  }
+}

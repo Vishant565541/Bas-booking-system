@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Selection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .bus-layout {
+            display: grid;
+            grid-template-columns: repeat(5, 40px); /* 2 + aisle + 3 */
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .seat {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .available {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+
+        .occupied {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            cursor: not-allowed;
+        }
+
+        .selected {
+            background-color: #2196F3; /* Blue */
+            color: white;
+        }
+
+        .aisle {
+            width: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Seats</h1>
+
+        <div class="bus-layout">
+            <div class="seat available" data-seat="1A">1A</div>
+            <div class="seat available" data-seat="1B">1B</div>
+            <div class="aisle"></div>
+            <div class="seat available" data-seat="1C">1C</div>
+            <div class="seat available" data-seat="1D">1D</div>
+            <div class="seat available" data-seat="1E">1E</div>
+
+            <div class="seat available" data-seat="2A">2A</div>
+            <div class="seat occupied" data-seat="2B">2B</div>
+            <div class="aisle"></div>
+            <div class="seat available" data-seat="2C">2C</div>
+            <div class="seat available" data-seat="2D">2D</div>
+            <div class="seat available" data-seat="2E">2E</div>
+
+            <div class="seat available" data-seat="3A">3A</div>
+            <div class="seat available" data-seat="3B">3B</div>
+            <div class="aisle"></div>
+            <div class="seat available" data-seat="3C">3C</div>
+            <div class="seat available" data-seat="3D">3D</div>
+            <div class="seat available" data-seat="3E">3E</div>
+
+            <div class="seat available" data-seat="4A">4A</div>
+            <div class="seat available" data-seat="4B">4B</div>
+            <div class="aisle"></div>
+            <div class="seat occupied" data-seat="4C">4C</div>
+            <div class="seat available" data-seat="4D">4D</div>
+            <div class="seat available" data-seat="4E">4E</div>
+
+            <div class="seat available" data-seat="5A">5A</div>
+            <div class="seat available" data-seat="5B">5B</div>
+            <div class="aisle"></div>
+            <div class="seat available" data-seat="5C">5C</div>
+            <div class="seat occupied" data-seat="5D">5D</div>
+            <div class="seat available" data-seat="5E">5E</div>
+
+            <div class="seat available" data-seat="6A">6A</div>
+            <div class="seat occupied" data-seat="6B">6B</div>
+            <div class="aisle"></div>
+            <div class="seat available" data-seat="6C">6C</div>
+            <div class="seat available" data-seat="6D">6D</div>
+            <div class="seat available" data-seat="6E">6E</div>
+
+            <div class="seat available" data-seat="7A">7A</div>
+            <div class="seat available" data-seat="7B">7B</div>
+            <div class="aisle"></div>
+            <div class="seat available" data-seat="7C">7C</div>
+            <div class="seat occupied" data-seat="7D">7D</div>
+            <div class="seat available" data-seat="7E">7E</div>
+
+            <div class="seat occupied" data-seat="8A">8A</div>
+            <div class="seat available" data-seat="8B">8B</div>
+            <div class="aisle"></div>
+            <div class="seat available" data-seat="8C">8C</div>
+            <div class="seat available" data-seat="8D">8D</div>
+            <div class="seat occupied" data-seat="8E">8E</div>
+
+            <div class="seat available" data-seat="9A">9A</div>
+            <div class="seat occupied" data-seat="9B">9B</div>
+            <div class="aisle"></div>
+            <div class="seat occupied" data-seat="9C">9C</div>
+            <div class="seat available" data-seat="9D">9D</div>
+            <div class="seat available" data-seat="9E">9E</div>
+
+            <div class="seat available" data-seat="10A">10A</div>
+            <div class="seat available" data-seat="10B">10B</div>
+            <div class="aisle"></div>
+            <div class="seat available" data-seat="10C">10C</div>
+            <div class="seat occupied" data-seat="10D">10D</div>
+            <div class="seat occupied" data-seat="10E">10E</div>
+
+            <div class="seat occupied" data-seat="11A">11A</div>
+            <div class="seat available" data-seat="11B">11B</div>
+            <div class="aisle"></div>
+            <div class="seat available" data-seat="11C">11C</div>
+            <div class="seat available" data-seat="11D">11D</div>
+            <div class="seat occupied" data-seat="11E">11E</div>
+        </div>
+
+        <div class="selected-seats">
+            <h2>Selected Seats</h2>
+            <ul id="selected-seats-list"></ul>
+        </div>
+
+        <button id="confirm-seats-button" disabled>Confirm Seats</button>
+    </div>
+
+    <script src="seat_selection.js"></script>
+</body>
+</html>
