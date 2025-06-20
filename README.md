@@ -1,15 +1,5 @@
 # Bus Booking System
 
-![Image](https://github.com/user-attachments/assets/034b5cef-4e9e-4d2f-ae64-50c509e220f1)
-
-![Image](https://github.com/user-attachments/assets/20752f5e-3ab9-486c-a9a1-d08399dbf4c7)
-
-
-![Image](https://github.com/user-attachments/assets/2bad21bc-687d-415e-8d41-cc24e8520396)
-
-![Image](https://github.com/user-attachments/assets/bf8d4722-afe6-4cef-ba36-7f5499a50a0b)
-![Image](https://github.com/user-attachments/assets/6b2e48a5-b3f9-497a-8bdd-c401ca490e02)
-
 ## Overview
 This project is a full-stack Bus Booking System that allows users to search for buses, book tickets, check ticket status, cancel reservations, and provide feedback. It also provides an admin dashboard for managing buses, routes, and users.
 
@@ -78,6 +68,9 @@ project/
 
 ## Frontend
 ### User Side
+![Image](https://github.com/user-attachments/assets/034b5cef-4e9e-4d2f-ae64-50c509e220f1)
+
+![Image](https://github.com/user-attachments/assets/20752f5e-3ab9-486c-a9a1-d08399dbf4c7)
 - **Pages:**
   - `index.html`: Home page with search and info
   - `bookTicket.html`: Search and book buses
@@ -92,6 +85,10 @@ project/
   - Feedback form (requires login)
 
 ### Admin Section
+![Image](https://github.com/user-attachments/assets/2bad21bc-687d-415e-8d41-cc24e8520396)
+
+![Image](https://github.com/user-attachments/assets/bf8d4722-afe6-4cef-ba36-7f5499a50a0b)
+
 - **Pages:**
   - `Admin_Home.html`: Dashboard with stats and charts
   - `AddBus.html`: Add new buses
